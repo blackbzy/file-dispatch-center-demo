@@ -539,9 +539,9 @@ ACK 机制确保文件传输的可靠性：
 
 ## 📧 联系方式
 
-- **项目主页**: https://github.com/yourusername/springboot-to-launch4j
-- **问题反馈**: https://github.com/yourusername/springboot-to-launch4j/issues
-- **邮箱**: your.email@example.com
+- **项目主页**: https://github.com/blackbzy/file-dispatch-center-demo
+- **问题反馈**: https://github.com/blackbzy/file-dispatch-center-demo/issues
+- **邮箱**: blackbzy@blackbzy.com
 
 ## 🙏 致谢
 
