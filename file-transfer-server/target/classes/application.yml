@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+file-transfer:
+  server:
+    port: 8080
+    file-source-path: ./server-files
+    cron-expression: "0 0/5 * * * ?"
+    retry-count: 3
+    retry-interval: 5000
+    chunk-size: 1048576
+    validate-flag: FILE_TRANSFER_TOKEN
+    scheduled-files:
+      - example.txt
+      - data.csv
+    # 流量控制配置
+    so-sndbuf: 10485760  # 发送缓冲区大小（10MB）
+    so-rcvbuf: 10485760  # 接收缓冲区大小（10MB）
+    tcp-nodelay: true     # 禁用Nagle算法
+    write-buffer-low-watermark: 32768  # 写缓冲区低水位（32KB）
+    write-buffer-high-watermark: 65536 # 写缓冲区高水位（64KB）
+
+logging:
+  level:
+    com.example.server: DEBUG
+    io.netty: INFO

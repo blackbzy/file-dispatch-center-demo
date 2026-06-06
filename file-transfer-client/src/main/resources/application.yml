@@ -1,0 +1,12 @@
+file-transfer:
+  client:
+    server-host: localhost
+    server-port: 8080
+    file-save-path: ./client-files
+    reconnect-interval: 5000
+    validate-flag: FILE_TRANSFER_TOKEN
+
+logging:
+  level:
+    com.example.client: DEBUG
+    io.netty: INFO
